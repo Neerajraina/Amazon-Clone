@@ -7,45 +7,188 @@ Amazon website clone
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events in javascript</title>
-    <script>
-function myfunc(){
-    console.log("button is clicked");
-}
-function myfunc2(){
-    console.log("key is pressed");
-}
-function dosomething(){
-    alert("hello"); 
-}
-    </script>
+    <title>amazonclone</title>
+    <link rel="stylesheet" href="amazonclone.css">
+    <script src="https://kit.fontawesome.com/211484dd5c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h2>welcome to javascript events class</h2>
-    <form action="#" method="get">
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="fn" onkeyup="myfunc()"/>
-        <br>
-        <br>
-        <label for="lastname">Last Name</label>
+    <!--top navigation bar8-->
+    <nav class="d-flex">
+        <!--brand logo-->
+        <div class="nav-brand">
+            <a href="">
+                <img src="1671722381385_logo.png" alt="Amazon">
+                <span>.in</span>
+            </a>
+        </div>
+        <!--select address-->
+    <ul class="d-inline-block">
+        <li>&nbsp</li>
+        <li>
+            <!--font awesome for location-->
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+        </li>
 
-        <input type="text" name="lastname" id="ln"/>
-        <br>
-        <br>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="em"/>
-        <br>
-        <br>
-        <label for="contact">contact</label>
-        <input type="number" name="contact" id="contact"/>
-        <br>
-        <br>
-    </form>
-    <div onclick="dosomething()">hello</div>
-    <button onmouseover="myfunc()">submit</button>
+    </ul>
+    <div class="addr">
+        <a href="">
+            <p>Hello</p>
+            <h3>Select your address</h3>
+        </a>
+    </div>
+    <!--end of select address-->
+    <!--start of search-->
+    <div class="d-flex search">
+        <select name="allmenu" id="allmenu">
+            <option value="all1">ALL1</option>
+            <option value="all2">ALL2</option>
+        </select>
+        <!--INPUT TEXT-->
+        <input type="text">
+        <!--search icon-->
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+   
+    <!--end of search-->
+    <!--country flag-->
+    <div>
+        <!--flag image-->
+        <img src="1671722385779_india.png" alt="india flag">
+        <!--font awesome dropdown-->
+        <i class="fa-sharp fa-solid fa-caret-down"></i>
+    </div>
+    <!--start of hello sign in account-->
+    <ul class="d-flex nav_menu">
+        <li>
+            <a href="">
+                Hello Sign in<br>
+                <span>Account and lists <i class="fa-sharp fa-solid fa-caret-down"></i></span>
+            </a>
+        </li>
+
+    
+    <!--end of hello sign in account-->
+    <!--start of returns and orders-->
+        <li>
+            <a href="">
+                Returns<br>
+                <span>& orders</span>
+            </a>
+        </li>
+    <!--end of returns and orders-->
+    <!--cart-->
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>0</span>
+        </a>
+    </li>
+    </ul>
+    </nav>
+    <!--end of main nav-->
+    <!--start of submenu-->
+    <div class="submenu">
+        <a href="">
+            <i class="fa-solid fa-bars"></i>
+            ALL
+        </a>
+        <a href="">Best Seller</a>
+        <a href="">Mobiles</a>
+        <a href="">Electronics</a>
+        <a href="">Prime
+            <i class="fa-sharp fa-solid fa-caret-down"></i>
+        </a>
+        <a href="">Books</a>
+        <a href="">Home & Kitchen</a>
+        <a href="">
+            <i class="fa-brands fa-amazon"></i>
+            Prime day 23rd to 27th july
+        </a>
+    </div>
+    <!--end of submenu-->
+    <!--start of banner-->
+    <div class="banner">
+        <img src="1671722356263_banner1.jpg" alt="banner1"> 
+    </div>
+    <!--end of banner-->
+    <!--start of products -->
+    <div class="product">
+        <div class="productsmall">
+            <p class="heading">
+                Prime day is back
+            </p>
+            <img src="1671722399253_product2.jpg" alt="product2">
+            <a href="">see more</a>
+        </div>
+
+    </div>
+    <div class="product">
+        <div class="productsmall">
+            <p class="heading">
+                Smart gadgets in your home!.
+            </p>
+            <img src="1671722394326_product1.jpg" alt="product1">
+            <a href="">see more</a>
+        </div>
+        <div class="productsmall">
+            <p class="heading">
+                smart watch
+            </p>
+            <img src="1671722404447_product3.jpg" alt="product3">
+            <a href="">see more</a>
+        </div>
+
+    </div>
+    <div class="product">
+        <div class="productsmall">
+            <p class="heading">
+                Alexa
+            </p>
+            <img src="1671722410308_product4.jpg" alt="product4">
+            <a href="">see more</a>
+        </div>
+        <div class="productsmall">
+            <p class="heading">
+                Tab
+            </p>
+            <img src="1671722417844_product5.jpg" alt="product5">
+            <a href="">see more</a>
+        </div>
+
+    </div>
+    <div class="product">
+        <div class="productsmall">
+            <p class="heading">
+                Samsung TV
+            </p>
+            <img src="1671722425138_product6.jpg" alt="product6">
+            <a href="">see more</a>
+        </div>
+
+    </div>
+    <!--end of products -->
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <--! css part-->
 *{
