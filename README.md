@@ -174,22 +174,6 @@ Amazon website clone
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <--! css part-->
 *{
     margin: 0;
